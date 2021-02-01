@@ -6,8 +6,9 @@
 # Site
 title: offetuoso
 subtitle: offetuoso's Blog
-description:
-author: Kihun Oh
+description: "Remember the dream"
+author: "오기훈"
+github : https://github.com/offetuoso
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: ko
 date_format: '%Y-%m-%d'
