@@ -67,7 +67,9 @@
 {% endif %}
 <link href="{{ font_awesome_uri }}" rel="stylesheet" type="text/css" />
 
-<link href="{{ site.css | relative_url }}/main.css?v={{ site.version }}" rel="stylesheet" type="text/css" />
+
+<!-- <link href="{{ site.css | relative_url }}/main.css?v={{ site.version }}" rel="stylesheet" type="text/css" /> -->
+<link href="/custom/css/main.css?v={{ site.version }}" rel="stylesheet" type="text/css" />
 
 {% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}" />

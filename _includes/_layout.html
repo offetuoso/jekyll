@@ -24,12 +24,26 @@
   {% endif %}
 
   <div class="{{ container_class }} {{ page_class }} ">
-    <div class="headband"></div>
-
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div clsss="header-inner-wrapper">
         {% include _partials/header.html %}
         <div class="header-inner">
+            <div class="author">
+               <div class="author-profile">
+                  <div class="profile-img">
+                    <img src="/assets/images/avatar.gif" alt="profile">
+                  </div>
+                  <div class="profile-info">
+                    <div class="name">
+                      <a href="/@kihun">기훈</a>
+                    </div>
+                    <div class="description">
+                      "What Do You Do with a B.A. in Korean?"
+                    </div>
+                  </div>
+                </div>
+            </div>
+          
         </div>
         <div class="header-footer">
           <div class="header-footer-inner">
@@ -37,14 +51,6 @@
         </div>
       </div>
     </header>
-
-
-    
-    
-
-
-
-
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
