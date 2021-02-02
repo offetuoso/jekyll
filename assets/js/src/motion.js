@@ -54,7 +54,7 @@ $(document).ready(function () {
   var sidebarToggleLine1st = new SidebarToggleLine({
     el: '.sidebar-toggle-line-first',
     status: {
-      arrow: {width: '50%', rotateZ: '-45deg', top: '2px'},
+      arrow: {width: '70%', rotateZ: '-45deg', top: '2px'},
       close: {width: '100%', rotateZ: '-45deg', top: '5px'}
     }
   });
@@ -68,7 +68,7 @@ $(document).ready(function () {
   var sidebarToggleLine3rd = new SidebarToggleLine({
     el: '.sidebar-toggle-line-last',
     status: {
-      arrow: {width: '50%', rotateZ: '45deg', top: '-2px'},
+      arrow: {width: '70%', rotateZ: '45deg', top: '-2px'},
       close: {width: '100%', rotateZ: '45deg', top: '-5px'}
     }
   });
@@ -140,6 +140,11 @@ $(document).ready(function () {
           complete: function () {
             self.sidebarEl.addClass('sidebar-active');
             self.sidebarEl.trigger('sidebar.didShow');
+            
+            //sidebar 표시할때 카테고리 숨김
+            $('.category-wrapper').css('display','none');
+            $('.header-inner').find('.author').css('display','none');
+            
           }
         }
       );
@@ -155,9 +160,14 @@ $(document).ready(function () {
 
       this.sidebarEl.removeClass('sidebar-active');
       this.sidebarEl.trigger('sidebar.isHiding');
+      
+      //sidebar 숨길때 카테고리, 프로필 보여줌 
+      $('.category-wrapper').css('display','block');
+      $('.header-inner').find('.author').css('display','block');
+      
 
-      //在 post 页面下按下隐藏 sidebar 时如果当前选中的是“站点概览”，将 toc 去除 motion 效果
-      //防止再次打开时会出现在“站点概览”下的 bug
+      // 게시물 페이지 아래에있는 사이드 바를 숨기려고 눌렀을 때 "사이트 개요"가 현재 선택되어 있으면 toc의 모션 효과가 제거됩니다.
+      // 다시 열었을 때 "사이트 개요"아래에 나타나는 버그 방지
       if (!!$('.post-toc-wrap')) {
         if ($('.site-overview').css('display') === 'block') {
           $('.post-toc-wrap').removeClass('motion-element');
