@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MathJax with Jekyll"
+background : /custom/images/bg-index.jpg
 date: 2014-02-16
 categories: opinion
 tags: [resources, jekyll]

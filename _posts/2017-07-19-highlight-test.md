@@ -1,5 +1,6 @@
 ---
 title: Highlight Test
+background : /custom/images/bg-index.jpg
 categories:
  - Test
 tags:

@@ -26,8 +26,20 @@
   <div class="{{ container_class }} {{ page_class }} ">
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div clsss="header-inner-wrapper">
+        
         {% include _partials/header.html %}
-        <div class="header-inner">
+          
+           {% if page.background %}
+		
+    	<div class="header-inner" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}') ">
+	      <div class="overlay"></div>
+		<div class="page-heading">
+            <h1>{{page.title}}</h1>
+        </div>	
+		   
+		   {% else %}
+	
+		  <div class="header-inner"> 
             <div class="author">
                <div class="author-profile">
                   <div class="profile-img">
@@ -44,6 +56,9 @@
                   </div>
                 </div>
             </div>
+			 
+		   {% endif %}
+           
           
         </div>
         <div class="header-footer">

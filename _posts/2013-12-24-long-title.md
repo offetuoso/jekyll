@@ -1,5 +1,6 @@
 ---
 title:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.
+background : /custom/images/bg-index.jpg
 date: 2013-12-24 23:31:06
 categories:
 - Foo

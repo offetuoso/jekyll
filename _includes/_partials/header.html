@@ -31,7 +31,10 @@
               {% assign name = name_path[0] %}
               {% assign path = name_path[1] %}
               {% assign itemName = name | downcase %}
-              <li class="menu-item menu-item-{{ itemName }}">
+               
+               
+               
+              <li class="menu-item menu-item-{{ itemName }} {% if itemName == 'categories' or itemName == 'tags' %}hidden-menu{% endif %}">
                 <a href="{{ path | relative_url }}" rel="section">
                   {{ __.menu[name] }}
                   {% if site.menu_icons.enable %}
@@ -39,6 +42,7 @@
                   {% endif %}
                 </a>
               </li>
+              
             {% endfor %}
 
             {% if hasSearch %}

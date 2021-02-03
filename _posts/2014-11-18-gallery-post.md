@@ -1,6 +1,7 @@
 ---
 type: photo
 title: Gallery Post
+background : /custom/images/bg-index.jpg
 date: 2014-11-18 15:45:20
 category: Photo
 photos:
