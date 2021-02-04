@@ -254,12 +254,10 @@ html, body { height: 100%; }
     width: inherit;
 }
 
-.page-heading h1{
+.page-heading > h1{
 	font-size: 80px;
     margin-top: 0 auto;
-    font-weight: 500;
-    font-family: 'Noto sans KR', sans-serif;
-    font-weight: 500;
+    font-family: 'Noto sans KR', sans-serif !important;
     color : white;
     text-align: center;
     margin: 58px;	
@@ -549,7 +547,9 @@ pre .k, pre .kd, pre .kn, pre .kp, pre .kr, pre .kt, pre .javascript .function {
 .posts-expand .post-title-link { display: inline-block; position: relative; color: #555; font-weight: bold; border-bottom: none; line-height: 1.2; vertical-align: top; }
 .posts-expand .post-title-link::before { content: ""; position: absolute; width: 100%; height: 2px; bottom: 0; left: 0; background-color: #000; visibility: hidden; -webkit-transform: scaleX(0); -moz-transform: scaleX(0); -ms-transform: scaleX(0); -o-transform: scaleX(0); transform: scaleX(0); transition-duration: 0.2s; transition-timing-function: ease-in-out; transition-delay: 0s; }
 .posts-expand .post-title-link:hover::before { visibility: visible; -webkit-transform: scaleX(1); -moz-transform: scaleX(1); -ms-transform: scaleX(1); -o-transform: scaleX(1); transform: scaleX(1); }
-.posts-expand .post-title-link .fa { font-size: 16px; }
+
+.post-title-link-external { margin-left: 6px;}
+.post-title-link-external .fa { font-size: 16px; }
 
 .posts-expand .post-meta { margin: 3px 0 60px 0; color: #999; font-family: "Noto Sans KR","Nanum Gothic","Yusei Magic", sans-serif !important; font-size: 12px; text-align: center; }
 .posts-expand .post-meta .post-category-list { display: inline-block; margin: 0; padding: 3px; }
@@ -955,7 +955,12 @@ embed { display: block; margin: 0px auto 25px auto; }
 .profile-img {padding: 10px 20px 0px 0px;}
 .profile-info {padding: 40px 0 60px;}
 
+.author-profile .git-icon {
+	    border-bottom: 0px;
+}
 .author-profile .git-icon svg{
+    position: relative;
+    top: 4px;
 	width:24px;
 	height:24px;
 	text-decoration: none;

@@ -4,8 +4,10 @@
 
       <{% if site.seo %}h3{% else %}h2{% endif %} class="post-title">
         {% if post.link %}{% comment %} Link posts {% endcomment %}
-          <a class="post-title-link post-title-link-external" target="_blank" href="{{ post.link }}" itemprop="url">
+          <a class="post-title-link" href="{{ post.url | relative_url }}" itemprop="url"> 
             {{ post.title | default: post.link }}
+          </a>
+          <a class="post-title-link post-title-link-external" target="_blank" href="{{ post.link }}" itemprop="url" style="">
             <i class="fa fa-external-link"></i>
           </a>
         {% else %}
