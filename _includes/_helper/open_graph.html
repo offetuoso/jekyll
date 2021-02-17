@@ -56,8 +56,8 @@
   <meta property="og:type" content="{{ type | xml_escape }}"><!--newline-->
   <meta property="og:title" content="{{ og_title | xml_escape }}"><!--newline-->
   <meta property="og:url" content="{{ url }}"><!--newline-->
-   {% if language %}
-    <meta property="og:baseurl" content="{{ baseurl }}">
+   {% if site.baseurl %}
+    <meta property="og:baseurl" content="{{ site.baseurl }}">
     <!--newline-->
   {% endif %}
   <meta property="og:site_name" content="{{ site_name | xml_escape }}"><!--newline-->
