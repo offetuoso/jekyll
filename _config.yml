@@ -238,7 +238,7 @@ social_icons:
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-avatar: '/assets/images/avatar.png'
+avatar: '/jekyll/assets/images/avatar.png'
 
 
 
@@ -352,7 +352,7 @@ post_copyright:
 #   image: url-of-image   - Images's url
 custom_logo:
   enabled: true
-  image: /assets/images/github.png
+  image: /jekyll/assets/images/github.png
 
 
 # Code Highlight theme
