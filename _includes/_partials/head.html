@@ -72,9 +72,9 @@
 
 <!-- <link href="{{ site.css | relative_url }}/main.css?v={{ site.version }}" rel="stylesheet" type="text/css" /> -->
 
-<link href="{{ '/' | baseurl}}custom/css/main.css?v={{ site.version }}" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="{{ '/' | baseurl}}custom/js/common.js?v={{ site.version }}"></script>
-<script type="text/javascript" src="{{ '/' | baseurl}}custom/js/jquery-3.5.1.js"></script>
+<link href="{{  baseurl | '/'}}custom/css/main.css?v={{ site.version }}" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{{  baseurl | '/'}}custom/js/common.js?v={{ site.version }}"></script>
+<script type="text/javascript" src="{{  baseurl | '/'}}custom/js/jquery-3.5.1.js"></script>
 
 
 {% if page.keywords %}

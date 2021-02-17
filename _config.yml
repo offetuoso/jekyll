@@ -19,7 +19,7 @@ date_format: '%Y-%m-%d'
 permalink: pretty
 
 baseurl: "/jekyll/" # the subpath of your site, e.g. /blog/
-url: "https://offetuoso.github.io/jekyll/" # the base hostname & protocol for your site
+url: "https://offetuoso.github.io" # the base hostname & protocol for your site
 github_username: offetuoso
 
 
